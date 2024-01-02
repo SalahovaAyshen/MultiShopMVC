@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "anBdud03thS42F07n/ynsaqfZ8aLV0aths1/x0ONA5uDOcAsB1oolw5J6iKOPJgUFP714CSRe+yr9OpxiKfmmQ==",
+  "dgSpecHash": "8NWEWfMCmAXRv0rFG+sd0Bcv/ODqZojfwHNDTjs0symqgP4UzLF3Ri44Is1PrADPTwFZH4rUBrE3EY4s+nb4eA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hp\\Desktop\\MultiShop\\MultiShop\\MultiShop.csproj",
+  "projectFilePath": "C:\\Users\\hp\\Desktop\\MultiShopMVC\\MultiShop\\MultiShop\\MultiShop.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hp\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
