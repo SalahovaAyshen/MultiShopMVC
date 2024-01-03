@@ -33,6 +33,14 @@
       "PackagePath": "staticwebassets\\assets\\css\\style.min.css"
     },
     {
+      "Id": "C:\\Users\\hp\\Desktop\\MultiShopMVC\\MultiShop\\MultiShop\\wwwroot\\assets\\img\\cargo-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\cargo-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\Desktop\\MultiShopMVC\\MultiShop\\MultiShop\\wwwroot\\assets\\img\\cargo-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\cargo-2.jpg"
+    },
+    {
       "Id": "C:\\Users\\hp\\Desktop\\MultiShopMVC\\MultiShop\\MultiShop\\wwwroot\\assets\\img\\carousel-1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\carousel-1.jpg"
     },
