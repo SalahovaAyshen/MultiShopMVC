@@ -13,9 +13,12 @@ var app = builder.Build();
 
 app.UseStaticFiles();
 app.UseRouting();
+app.UseAuthentication();
+app.UseAuthorization();
 
 app.MapControllerRoute(
-    name:"default",
-    pattern:"{controller}/{action}");
+    "default",
+    "{controller=home}/{action=index}/{id?}"
+    );
 
 app.Run();

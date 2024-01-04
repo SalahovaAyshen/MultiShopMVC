@@ -69,6 +69,14 @@
       "PackagePath": "staticwebassets\\assets\\img\\cat-4.jpg"
     },
     {
+      "Id": "C:\\Users\\hp\\Desktop\\MultiShopMVC\\MultiShop\\MultiShop\\wwwroot\\assets\\img\\hoodie-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\hoodie-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\Desktop\\MultiShopMVC\\MultiShop\\MultiShop\\wwwroot\\assets\\img\\hoodie-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\hoodie-2.jpg"
+    },
+    {
       "Id": "C:\\Users\\hp\\Desktop\\MultiShopMVC\\MultiShop\\MultiShop\\wwwroot\\assets\\img\\offer-1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\offer-1.jpg"
     },
