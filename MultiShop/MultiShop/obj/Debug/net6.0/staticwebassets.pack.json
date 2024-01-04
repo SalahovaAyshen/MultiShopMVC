@@ -77,6 +77,10 @@
       "PackagePath": "staticwebassets\\assets\\img\\hoodie-2.jpg"
     },
     {
+      "Id": "C:\\Users\\hp\\Desktop\\MultiShopMVC\\MultiShop\\MultiShop\\wwwroot\\assets\\img\\jeans-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\jeans-1.jpg"
+    },
+    {
       "Id": "C:\\Users\\hp\\Desktop\\MultiShopMVC\\MultiShop\\MultiShop\\wwwroot\\assets\\img\\offer-1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\offer-1.jpg"
     },

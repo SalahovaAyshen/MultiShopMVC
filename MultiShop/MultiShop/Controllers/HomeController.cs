@@ -14,13 +14,15 @@ namespace MultiShop.Controllers
         {
             _context = context;
         }
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string? search)
         {
             ICollection<Category> categories = await _context.Categories.Include(c=>c.Products).ToListAsync();
             ICollection<Slider> sliders = await _context.Sliders.OrderBy(s=>s.Order).ToListAsync();
             ICollection<Shipping> shippings = await _context.Shippings.ToListAsync();
             ICollection<Product> featured = await _context.Products.Include(f=>f.ProductImages.Where(pi=>pi.IsPrimary==true)).ToListAsync();
             ICollection<Product> recent = await _context.Products.OrderByDescending(r=>r.Order).Take(8).Include(r => r.ProductImages.Where(pi => pi.IsPrimary == true)).ToListAsync();
+         
+
             HomeVM homeVM = new HomeVM 
             {
                 Categories = categories,
@@ -28,6 +30,7 @@ namespace MultiShop.Controllers
                 Shippings = shippings,
                 FeaturedProducts = featured,
                 RecentProducts = recent,
+
             };
             return View(homeVM);
         }
