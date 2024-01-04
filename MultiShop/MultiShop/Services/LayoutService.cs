@@ -1,5 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using MultiShop.DAL;
+using MultiShop.Models;
 
 namespace MultiShop.Services
 {
@@ -14,7 +17,13 @@ namespace MultiShop.Services
         public async Task<Dictionary<string,string>> GetSettingsAsync()
         {
             Dictionary<string,string> settings = await _context.Settings.ToDictionaryAsync(s=>s.Key, s=>s.Value);
+            
             return settings;
+        }
+        public async Task<List<Category>> GetCategory()
+        {
+            List<Category> categories = await _context.Categories.ToListAsync();
+            return categories;
         }
     }
 }
