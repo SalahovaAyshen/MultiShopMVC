@@ -14,9 +14,10 @@ namespace MultiShop.Controllers
         {
             _context = context;
         }
-        public async Task<IActionResult> Index(int? order)
+        public async Task<IActionResult> Index(int? order, int page =1)
         {
-            IQueryable<Product> query =  _context.Products.Include(p => p.ProductImages.Where(pi => pi.IsPrimary == true)).AsQueryable();
+            int count = await _context.Products.CountAsync();
+            IQueryable<Product> query =  _context.Products.Skip((page-1)*3).Take(3).Include(p => p.ProductImages.Where(pi => pi.IsPrimary == true)).AsQueryable();
             switch (order)
             {
                 case 1:
@@ -35,7 +36,9 @@ namespace MultiShop.Controllers
 
             ShopVM vm = new ShopVM
             {
-                Product = await query.ToListAsync()
+                Product = await query.ToListAsync(),
+                TotalPage = Math.Ceiling((double)count/3),
+                CurrentPage = page
             };
             return View(vm);
         }
