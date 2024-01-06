@@ -1,0 +1,75 @@
+﻿
+@model ICollection<Slider>
+@{
+    int count = 0;
+}
+<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="row">
+            <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Sliders</h4>
+                        <a asp-controller="slider" asp-action="create" class="btn btn-success btn-rounded btn-fw">Create Slider</a>
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            No
+                                        </th>
+                                        <th>
+                                           Image
+                                        </th>
+                                        <th>
+                                           Title
+                                        </th>
+                                        <th>
+                                           Offer
+                                        </th>
+                                        <th>
+                                            Order
+                                        </th>
+                                        <th>
+                                            Settings
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (Slider slider in Model)
+                                    {
+                                        count++;
+                                        <tr>
+                                            <td>
+                                                @count
+                                            </td>
+                                            <td>
+                                                <img style="width:150px; height:150px" src="~/assets/img/@slider.ImageUrl"
+                                                     alt="Inner Image" />
+                                            </td>
+                                            <td>
+                                                @slider.Title
+                                            </td>
+                                            <td>
+                                                @slider.Offer
+                                            </td>
+                                            <td>
+                                                @slider.Order
+                                            </td>
+                                            <td>
+                                                <a asp-controller="slider" asp-action="update" asp-route-id="@slider.Id" class="btn btn-warning btn-rounded btn-fw btn-info"><i class="mdi mdi-pencil"></i></a>
+                                                <a asp-controller="slider" asp-action="delete" asp-route-id="@slider.Id" class="btn btn-danger btn-rounded btn-fw btn-info"><i class="mdi mdi-delete"></i></a>
+                                            </td>
+                                        </tr>
+                                    }
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
