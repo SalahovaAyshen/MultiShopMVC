@@ -52,5 +52,49 @@ namespace MultiShop.Areas.Manage.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
+        
+        public async Task<IActionResult> Update(int id)
+        {
+            if (id <= 0) return BadRequest();
+            Category category = await _context.Categories.FirstOrDefaultAsync(c => c.Id == id);
+            if (category == null) return NotFound();
+            UpdateCategoryVM categoryVM = new UpdateCategoryVM
+            {
+                Name = category.Name
+            };
+            return View(categoryVM);
+        }
+        [HttpPost]
+        public async Task<IActionResult> Update(int id, UpdateCategoryVM categoryVM)
+        {
+            if(id<=0) return BadRequest();
+            Category exist = await _context.Categories.FirstOrDefaultAsync(c=>c.Id== id);   
+            if(exist==null) return NotFound();
+            bool result = await _context.Categories.AnyAsync(c => c.Name == categoryVM.Name);
+            if(result)
+            {
+                ModelState.AddModelError("Name", "The name already exists");
+                return View(categoryVM);
+            }
+            exist.Name = categoryVM.Name;
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+
+        public async Task<IActionResult> Delete(int id)
+        {
+            if (id <= 0) return BadRequest();
+            Category category = await _context.Categories.FirstOrDefaultAsync(c => c.Id == id);
+            if (category == null) return NotFound();
+            Product product = await _context.Products.FirstOrDefaultAsync(c => c.CategoryId == id);
+            if(product is not null)
+            {
+                product.CategoryId = null;
+            }
+            _context.Categories.Remove(category);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+
+        }
     }
 }
