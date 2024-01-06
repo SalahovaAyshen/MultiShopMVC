@@ -15,4 +15,14 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\manage\fonts\.DS_Store" />
+    <None Include="wwwroot\manage\fonts\Roboto\.DS_Store" />
+    <None Include="wwwroot\manage\images\.DS_Store" />
+    <None Include="wwwroot\manage\images\auth\.DS_Store" />
+    <None Include="wwwroot\manage\images\faces\.DS_Store" />
+    <None Include="wwwroot\manage\js\.DS_Store" />
+    <None Include="wwwroot\manage\vendors\.DS_Store" />
+  </ItemGroup>
+
 </Project>
