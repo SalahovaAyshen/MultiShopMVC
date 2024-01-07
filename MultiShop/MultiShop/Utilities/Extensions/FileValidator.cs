@@ -32,6 +32,14 @@
             }
             return filename;
         }
+        public static void DeleteFile(this string filename, string root, params string[] folders)
+        {
+            string path = Root(filename, root, folders);
+            if (File.Exists(path))
+            {
+                File.Delete(path);
+            }
+        } 
        
     }
 }

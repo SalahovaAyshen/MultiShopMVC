@@ -63,5 +63,61 @@ namespace MultiShop.Areas.Manage.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
+        public async Task<IActionResult> Update(int id)
+        {
+            if(id<=0) return BadRequest();
+            Slider slider = await _context.Sliders.FirstOrDefaultAsync(s=>s.Id==id);
+            if (slider is null) return NotFound();
+            UpdateSliderVM sliderVM = new UpdateSliderVM 
+            {
+                Title = slider.Title,
+                Offer = slider.Offer,
+                Order = slider.Order,
+                Button = slider.Button,
+            };
+            return View(sliderVM);
+        }
+        [HttpPost]
+        public async Task<IActionResult> Update(int id, UpdateSliderVM sliderVM)
+        {
+            if (!ModelState.IsValid) return View(sliderVM);
+            if(id<=0) return BadRequest();
+            Slider existed = await _context.Sliders.FirstOrDefaultAsync(s=>s.Id == id);
+            if (existed is null) return NotFound();
+            if(sliderVM.Photo is not null)
+            {
+                if (!sliderVM.Photo.ValidateType("image/"))
+                {
+                    ModelState.AddModelError("Photo", "The image type must be image");
+                    return View(sliderVM);
+                }
+                if (!sliderVM.Photo.ValidateSize(2 * 1024))
+                {
+                    ModelState.AddModelError("Photo", "The image size can't be more than 2 mb");
+                    return View(sliderVM);
+                }
+                string filename = await sliderVM.Photo.CreateFileAsync(_env.WebRootPath, "assets", "img");
+                existed.ImageUrl.DeleteFile(_env.WebRootPath, "assets", "img");
+                existed.ImageUrl = filename;
+            }
+
+            existed.Title = sliderVM.Title;
+            existed.Offer = sliderVM.Offer;
+            existed.Order = sliderVM.Order;
+            existed.Button = sliderVM.Button;
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+        public async Task<IActionResult> Delete(int id)
+        {
+            if (id <= 0) return BadRequest();
+            Slider existed = await _context.Sliders.FirstOrDefaultAsync(s => s.Id == id);
+            if(existed is null) return NotFound();
+
+            existed.ImageUrl.DeleteFile(_env.WebRootPath, "assets", "img");
+            _context.Sliders.Remove(existed);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
     }
 }

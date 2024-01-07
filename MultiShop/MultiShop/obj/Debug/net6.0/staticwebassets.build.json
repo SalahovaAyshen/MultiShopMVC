@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "thkLprZoJ4TONXK6jmk6k1+q0MMeRed3X1tO0wCoYvE=",
+  "Hash": "R46oAFUcPoow3Uzn5xRhEjGo3jXXGa41fJHepoCQZAY=",
   "Source": "MultiShop",
   "BasePath": "_content/MultiShop",
   "Mode": "Default",
@@ -167,6 +167,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\css\\style.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\hp\\Desktop\\MultiShopMVC\\MultiShop\\MultiShop\\wwwroot\\assets\\img\\10d186e9-8f8d-410f-a6a1-1150aa525d7cWhatsApp Image 2022-09-04 at 00.27.25.jpeg",
+      "SourceId": "MultiShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\MultiShopMVC\\MultiShop\\MultiShop\\wwwroot\\",
+      "BasePath": "_content/MultiShop",
+      "RelativePath": "assets/img/10d186e9-8f8d-410f-a6a1-1150aa525d7cWhatsApp Image 2022-09-04 at 00.27.25.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\10d186e9-8f8d-410f-a6a1-1150aa525d7cWhatsApp Image 2022-09-04 at 00.27.25.jpeg"
     },
     {
       "Identity": "C:\\Users\\hp\\Desktop\\MultiShopMVC\\MultiShop\\MultiShop\\wwwroot\\assets\\img\\cargo-1.jpg",
