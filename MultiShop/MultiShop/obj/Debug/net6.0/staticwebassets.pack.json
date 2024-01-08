@@ -33,8 +33,24 @@
       "PackagePath": "staticwebassets\\assets\\css\\style.min.css"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\MultiShopMVC\\MultiShop\\MultiShop\\wwwroot\\assets\\img\\10d186e9-8f8d-410f-a6a1-1150aa525d7cWhatsApp Image 2022-09-04 at 00.27.25.jpeg",
-      "PackagePath": "staticwebassets\\assets\\img\\10d186e9-8f8d-410f-a6a1-1150aa525d7cWhatsApp Image 2022-09-04 at 00.27.25.jpeg"
+      "Id": "C:\\Users\\hp\\Desktop\\MultiShopMVC\\MultiShop\\MultiShop\\wwwroot\\assets\\img\\2145cf96-2e1e-4b58-92ec-9b47cc007b0eWhatsApp Image 2022-09-04 at 00.27.16.jpeg",
+      "PackagePath": "staticwebassets\\assets\\img\\2145cf96-2e1e-4b58-92ec-9b47cc007b0eWhatsApp Image 2022-09-04 at 00.27.16.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\Desktop\\MultiShopMVC\\MultiShop\\MultiShop\\wwwroot\\assets\\img\\6862de69-4db6-462c-976d-3799229a29e7WhatsApp Image 2022-09-04 at 00.27.26.jpeg",
+      "PackagePath": "staticwebassets\\assets\\img\\6862de69-4db6-462c-976d-3799229a29e7WhatsApp Image 2022-09-04 at 00.27.26.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\Desktop\\MultiShopMVC\\MultiShop\\MultiShop\\wwwroot\\assets\\img\\7994685e-4098-4779-9476-96d07b8f1562WhatsApp Image 2022-09-04 at 00.26.37.jpeg",
+      "PackagePath": "staticwebassets\\assets\\img\\7994685e-4098-4779-9476-96d07b8f1562WhatsApp Image 2022-09-04 at 00.26.37.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\Desktop\\MultiShopMVC\\MultiShop\\MultiShop\\wwwroot\\assets\\img\\9a1335ac-e366-48f7-9c13-90f0b7a40678WhatsApp Image 2022-09-04 at 00.26.43.jpeg",
+      "PackagePath": "staticwebassets\\assets\\img\\9a1335ac-e366-48f7-9c13-90f0b7a40678WhatsApp Image 2022-09-04 at 00.26.43.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\Desktop\\MultiShopMVC\\MultiShop\\MultiShop\\wwwroot\\assets\\img\\a08da6fa-b00a-450c-9de7-f624a3d34223WhatsApp Image 2022-09-03 at 20.58.33.jpeg",
+      "PackagePath": "staticwebassets\\assets\\img\\a08da6fa-b00a-450c-9de7-f624a3d34223WhatsApp Image 2022-09-03 at 20.58.33.jpeg"
     },
     {
       "Id": "C:\\Users\\hp\\Desktop\\MultiShopMVC\\MultiShop\\MultiShop\\wwwroot\\assets\\img\\cargo-1.jpg",
@@ -47,10 +63,6 @@
     {
       "Id": "C:\\Users\\hp\\Desktop\\MultiShopMVC\\MultiShop\\MultiShop\\wwwroot\\assets\\img\\carousel-1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\carousel-1.jpg"
-    },
-    {
-      "Id": "C:\\Users\\hp\\Desktop\\MultiShopMVC\\MultiShop\\MultiShop\\wwwroot\\assets\\img\\carousel-2.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\carousel-2.jpg"
     },
     {
       "Id": "C:\\Users\\hp\\Desktop\\MultiShopMVC\\MultiShop\\MultiShop\\wwwroot\\assets\\img\\carousel-3.jpg",

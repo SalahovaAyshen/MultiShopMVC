@@ -11,7 +11,7 @@
         public string SKU { get; set; } = null!;
         public int? CategoryId { get; set; }
         public Category Category { get; set; }
-        public ICollection<ProductSize> ProductSizes { get; set; }
+        public List<ProductSize> ProductSizes { get; set; }
         public ICollection<ProductImage> ProductImages { get; set; }
 
     }
