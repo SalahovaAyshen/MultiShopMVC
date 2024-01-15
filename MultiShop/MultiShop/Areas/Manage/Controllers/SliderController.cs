@@ -1,14 +1,17 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MultiShop.Areas.Manage.ViewModels;
 using MultiShop.DAL;
 using MultiShop.Models;
+using MultiShop.Utilities.Enums;
 using MultiShop.Utilities.Extensions;
 
 namespace MultiShop.Areas.Manage.Controllers
 {
     [Area("Manage")]
-    
+    [Authorize(Roles =nameof(UserRole.Admin))]
+
     public class SliderController : Controller
     {
         private readonly IWebHostEnvironment _env;

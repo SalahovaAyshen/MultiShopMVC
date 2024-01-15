@@ -131,3 +131,8 @@ C:\Users\hp\Desktop\MultiShopMVC\MultiShop\MultiShop\obj\Debug\net6.0\refint\Mul
 C:\Users\hp\Desktop\MultiShopMVC\MultiShop\MultiShop\obj\Debug\net6.0\MultiShop.pdb
 C:\Users\hp\Desktop\MultiShopMVC\MultiShop\MultiShop\obj\Debug\net6.0\MultiShop.genruntimeconfig.cache
 C:\Users\hp\Desktop\MultiShopMVC\MultiShop\MultiShop\obj\Debug\net6.0\ref\MultiShop.dll
+C:\Users\hp\Desktop\MultiShopMVC\MultiShop\MultiShop\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\hp\Desktop\MultiShopMVC\MultiShop\MultiShop\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\hp\Desktop\MultiShopMVC\MultiShop\MultiShop\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\hp\Desktop\MultiShopMVC\MultiShop\MultiShop\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\hp\Desktop\MultiShopMVC\MultiShop\MultiShop\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll

@@ -1,9 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using MultiShop.Models;
 
 namespace MultiShop.DAL
 {
-    public class AppDbContext:DbContext
+    public class AppDbContext:IdentityDbContext<AppUser>
     {
         public AppDbContext(DbContextOptions<AppDbContext> options):base(options) { }
         public DbSet<Setting> Settings { get; set; }
@@ -14,6 +15,7 @@ namespace MultiShop.DAL
         public DbSet<ProductImage> ProductImages { get; set; }
         public DbSet<Slider> Sliders { get; set; }
         public DbSet<Shipping> Shippings { get; set; }
+        public DbSet<AppUser> AppUsers { get; set; }
 
 
 

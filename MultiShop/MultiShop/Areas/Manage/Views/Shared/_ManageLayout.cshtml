@@ -218,6 +218,32 @@
                             <span class="menu-title">Products</span>
                         </a>
                     </li> 
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link">
+                                <span class="menu-title">@User.Identity.Name</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="account" asp-action="logout">
+                                <span class="menu-title">Logout</span>
+                            </a>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="account" asp-action="login">
+                                <span class="menu-title">Login</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="account" asp-action="register">
+                                <span class="menu-title">Register</span>
+                            </a>
+                        </li>
+                    }
 
                 </ul>
             </nav>
